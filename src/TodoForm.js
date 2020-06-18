@@ -1,6 +1,6 @@
 import React, {useCallback, useState} from 'react';
 
-const TodoFrom = ({ onInsert }) => {
+const TodoForm = ({ onInsert }) => {
     const [value, setValue] = useState('');
 
     const onChange = useCallback(e => {
@@ -25,4 +25,4 @@ const TodoFrom = ({ onInsert }) => {
     );
 };
 
-export default TodoFrom;
+export default TodoForm;

@@ -1,10 +1,10 @@
 import React from 'react';
 import {fireEvent, render} from '@testing-library/react';
-import TodoFrom from "./TodoForm";
+import TodoForm from "./TodoForm";
 
 describe('<TodoFrom />', () => {
     const setup = (props = {}) => {
-        const utils = render(<TodoFrom {...props} />);
+        const utils = render(<TodoForm {...props} />);
         const { getByText, getByPlaceholderText } = utils;
         const input = getByPlaceholderText('할 일을 입력하세요.');
         const button = getByText('등록');
